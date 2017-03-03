@@ -43,7 +43,7 @@ class carbon_c_relay::config (
   ### Set header for config 
   concat::fragment { 'header':
     target  => $config_file,
-    order   => '10',
+    order   => '01',
     content => "### ${config_file}: Managed by Puppet."
   }
 
